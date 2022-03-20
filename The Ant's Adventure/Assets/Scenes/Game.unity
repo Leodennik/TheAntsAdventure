@@ -4744,7 +4744,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1780, y: 520}
+  m_SizeDelta: {x: 1780, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &654656176
 MonoBehaviour:
@@ -4779,13 +4779,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You were born in a small aquarium in the laboratory, but after a while
-    you found the other creature that looks similar to you. You became friends with
-    him and started working together to break the glass of the tank. It was not easy
-    because it takes some strength to rip through thick glass walls, but with your
-    new companion and your combined strength, the glass eventually shattered, and
-    you were finally able to escape from your tank, together! You have no idea what
-    lays ahead of you, but you're ready to face the unknown!
+  m_Text: You were born in a small tank in the laboratory, but after a while you
+    found the other creature that looks similar to you. You became friends with him
+    and started working together to break the glass of the tank. It was not easy
+    because to rip through thick glass walls, but with your new companion and your
+    combined strength, the glass eventually shattered, and you were finally able
+    to escape from your prison. You have no idea what lays ahead of you, but you're
+    ready to face the unknown!
 --- !u!222 &654656177
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5563,7 +5563,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1780, y: 520}
+  m_SizeDelta: {x: 1780, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &723695177
 MonoBehaviour:
@@ -11567,7 +11567,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1548110518
 MonoBehaviour:
   m_ObjectHideFlags: 0
