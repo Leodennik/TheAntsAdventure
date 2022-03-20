@@ -26,8 +26,7 @@ public class Player : Ant
         _playerInput = GetComponent<PlayerInput>();
         _playerSleep = GetComponent<PlayerSleep>();
 
-        _virtualCamera = FindObjectOfType<CinemachineVirtualCamera>();
-        _virtualCamera.Follow = antAttack.GetAcidCreator().transform;
+        CameraController.Instance.SetFollow(antAttack.GetAcidCreator().transform);
         
         _stats.Init(this);
         SetSize(_stats.GetSize());

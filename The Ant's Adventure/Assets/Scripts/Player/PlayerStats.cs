@@ -1,10 +1,8 @@
 using System;
-using Cinemachine;
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    private CinemachineVirtualCamera _virtualCamera;
     private Player _player;
     private int _level;
     
@@ -12,7 +10,7 @@ public class PlayerStats : MonoBehaviour
     private Energy _energy;
     private Hunger  _hunger;
 
-    [SerializeField] private float restoreEnergyDelay = 2.0f;
+    [SerializeField] private float restoreEnergyDelay = 1.0f;
     [SerializeField] private StatsPerLevel[] arrayStatsPerLevel;
 
     private float _restoreEnergyTimer;
@@ -21,10 +19,10 @@ public class PlayerStats : MonoBehaviour
     private bool _isCanShoot;
     
     
+    
     public void Init(Player player)
     {
         _player = player;
-        _virtualCamera = FindObjectOfType<CinemachineVirtualCamera>();
         
         _health  = _player.GetComponent<Health>();
         _energy  = _player.GetComponent<Energy>();
@@ -77,8 +75,8 @@ public class PlayerStats : MonoBehaviour
         _health.SetMaxValue(arrayStatsPerLevel[_level].maxHealth);
         _energy.SetMaxValue(arrayStatsPerLevel[_level].maxStamina);
         _hunger.SetMaxValue(arrayStatsPerLevel[_level].maxHunger);
-            
-        _virtualCamera.m_Lens.OrthographicSize = arrayStatsPerLevel[_level].cameraSize;
+
+        CameraController.Instance.SetAdditionalSize(arrayStatsPerLevel[_level].cameraSize);
 
         float newSize = arrayStatsPerLevel[_level].playerSize;
         _player.SetLocalScale(newSize, newSize);
