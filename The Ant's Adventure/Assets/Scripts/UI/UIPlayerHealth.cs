@@ -1,0 +1,4 @@
+public class UIPlayerHealth : UIParameterLineBars
+{
+
+}
